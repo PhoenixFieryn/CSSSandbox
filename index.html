@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Sandbox</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/191f496622.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -375,6 +376,394 @@
                 and always scale to the document font-size.</p>
         </div>
     </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Specificity</h1>
+        <div class="challenge-body">
+            <p>Inline styles have a specificity of 1000, followed by ids of 100, classes/attributes/pseudo classes of
+                10,
+                elements of 1, and universal selectors of 0.</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Menu Dropdown</h1>
+        <div class="challenge-body">
+            <div class="example-menu-dropdown">
+                <div class="example-menu-dropdown-primary">Menu Dropdown</div>
+                <div class="example-menu-dropdown-subelements">
+                    <div>Item 1</div>
+                    <div>Item 2</div>
+                    <div>Item 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Box Shadow</h1>
+        <div class="challenge-body" class="example-box-shadow">
+            <div class="example-box-shadow-one">0 spread</div>
+            <div class="example-box-shadow-two">-5px spread</div>
+            <div class="example-box-shadow-three">5px spread</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Gradients</h1>
+        <div class="challenge-body">
+            <div class="example-linear-gradient">Default</div>
+            <div class="example-linear-gradient-to-right">To right</div>
+            <div class="example-linear-gradient-deg">-45 degrees</div>
+            <div class="example-linear-gradient-more-colors">To right, more colors</div>
+            <div class="example-linear-gradient-percent-colors">To right, percent colors</div>
+            <div class="example-linear-gradient-circle">Radial gradient</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Transform</h1>
+        <div class="challenge-body" class="example-transform-container">
+            <div class="example-translate">This is moved using translations</div>
+            <div class="example-scale">This size is affect by scale, with transform origin at left</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Rotate, skew, and matrix</h1>
+        <div class="challenge-body">
+            <div class="example-rotate">Rotate</div>
+            <div class="example-skew">Skew</div>
+            <div class="example-matrix">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix()" target="_blanck"
+                    rel="noopener noreferrer">Matrix</a>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">3D transform</h1>
+        <div class="challenge-body">
+            <div class="example-3d-transform">
+                transform: perspective(20rem)
+                translate3d(2rem, 2rem, -3rem);
+            </div>
+            <div class="example-3d-rotate">Rotate 3D</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Transitions</h1>
+        <div class="challenge-body">
+            <div class="example-transition">Transition delay: 1s. On hover: background-color: 1s, border-radius: 2s
+            </div>
+            <div class="example-transition-bezier">cubic-bezier(0,1.72,1,-0.66)</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Animation</h1>
+        <div class="challenge-body">
+            <div class="example-animation">Transform rotate animation with fill-mode forwards to maintain its last
+                state.</div>
+            <div class="example-animation-iteration">Iteration 2</div>
+            <div class="example-animation-alternate">Alternate + infinite iterations</div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">CSS Functions</h1>
+        <div class="challenge-body">
+            <p>anything followed by parenthesis are functions. Variables can be declared by --variablename and used by
+                var(--variablename).</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">CSS Tooltips</h1>
+        <div class="challenge-body">
+            <div class="example-tooltip">
+                <p>Hover over me</p>
+                <span>Tooltip here</span>
+            </div>
+            <div class="example-tooltip example-tooltip-arrow">
+                <p>Tooltip with arrow</p>
+                <span>Tooltip here</span>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Background image clip</h1>
+        <div class="challenge-body">
+            <div class="example-bg-image-co example-bg-image-origin-padding">
+                <div class="div">Origin padding. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+            <div class="example-bg-image-co example-bg-image-origin-border">
+                <div class="div">Origin border. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+            <div class="example-bg-image-co example-bg-image-origin-content">
+                <div class="div">Origin content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+            <div class="example-bg-image-co example-bg-image-clip-padding">
+                <div class="div">Clip padding. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+            <div class="example-bg-image-co example-bg-image-clip-border">
+                <div class="div">Clip border. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+            <div class="example-bg-image-co example-bg-image-clip-content">
+                <div class="div">Clip content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+                    praesentium distinctio
+                    explicabo aliquam animi placeat magni. Alias, recusandae, amet voluptatibus animi nesciunt mollitia
+                    natus veniam sit impedit exercitationem libero incidunt.Itaque eaque tenetur at officiis. Saepe
+                    sequi aliquam temporibus labore suscipit obcaecati nulla illo, perferendis tenetur nihil maiores ea
+                    praesentium est ducimus vero asperiores vel expedita odio quasi dignissimos hic!</div>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Columns</h1>
+        <div class="challenge-body">
+            <div class="example-column">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sequi corporis incidunt nobis,
+                    blanditiis a repellat ab obcaecati earum maiores porro nostrum doloremque rem magnam aperiam
+                    excepturi ut dicta nam rerum eos laboriosam eaque exercitationem labore. Voluptas incidunt eaque
+                    molestias eligendi alias, consequuntur saepe nemo, minus officia est adipisci corrupti sunt ad,
+                    magnam suscipit! Ea accusantium assumenda inventore corporis a? Accusamus officia cum alias rem
+                    tenetur dignissimos libero natus voluptatem vitae perferendis atque impedit voluptatum, expedita
+                    doloremque quos aspernatur. Debitis sint placeat provident dignissimos delectus tenetur esse
+                    mollitia officia asperiores, ipsa necessitatibus suscipit molestias sed voluptas eum itaque ad
+                    molestiae.</p>
+                <p>Nemo labore ab cum. Exercitationem architecto consequuntur rem cupiditate, doloremque beatae
+                    consequatur voluptates odio officia esse unde ea eius saepe eos eum est deleniti corporis nostrum?
+                    Asperiores, explicabo labore temporibus ut fuga sit aspernatur accusantium dolores vel voluptates
+                    tenetur facilis, aut consequuntur officiis cumque eum quam omnis perferendis aliquid fugit, incidunt
+                    quis doloremque. Consectetur quasi saepe, dolore illum nihil nesciunt laudantium porro veritatis aut
+                    perferendis perspiciatis repellendus dolorem itaque reprehenderit exercitationem numquam ut
+                    voluptatibus aspernatur esse sit distinctio! Tempora libero nemo doloremque fugiat corrupti officia,
+                    aperiam quidem, voluptas quod illum atque laudantium eius hic sequi fuga suscipit facere itaque
+                    veniam?</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+                <p>Ipsa quidem magni ipsam ipsum exercitationem eaque accusantium dolorum cumque quo consequuntur quasi
+                    dolore officia quaerat est excepturi labore, voluptates velit et nobis voluptas. Blanditiis
+                    repellendus delectus assumenda laudantium veritatis qui enim molestias iusto corporis reprehenderit
+                    harum minus dolores dolorum nesciunt cumque, asperiores ipsa, cum libero non? Suscipit at rem
+                    debitis veniam nam incidunt repudiandae aliquam qui odio, alias nihil optio odit quaerat quae
+                    veritatis architecto tempore nisi necessitatibus explicabo iure enim velit officia quod obcaecati!
+                    Numquam at, similique quo, tempora ex voluptatibus quidem dolore repellendus consectetur quis
+                    deserunt eos. Suscipit quos quasi hic doloremque rem blanditiis, facere quod at.</p>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading"></h1>
+        <div class="challenge-body">
+            <div class="example-resize">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos magnam tempora hic nostrum reiciendis
+                    perspiciatis alias ipsa temporibus cupiditate facere vel, error fugiat suscipit nemo optio non illum
+                    eveniet cum!
+                    Quas, deserunt recusandae quod quibusdam unde dolores ad commodi alias velit eius. Ratione, laborum?
+                    Dicta eum ratione repellat laboriosam. Voluptas laudantium impedit aut architecto! Et facilis eius
+                    soluta maxime nam!
+                    Corrupti ratione officia suscipit, facere illum optio tenetur commodi distinctio nisi, possimus
+                    atque aliquid explicabo, error voluptatem ut repudiandae. Sit accusantium itaque quos totam animi
+                    laudantium fugiat voluptatum, quae non!</p>
+            </div>
+            <button class="example-outline-offset">Outline offset</button>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Object Fit</h1>
+        <div class="challenge-body">
+            <h3>Cover</h3>
+            <img class="example-object-fit example-object-fit-cover"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Contain</h3>
+            <img class="example-object-fit example-object-fit-contain"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Fill</h3>
+            <img class="example-object-fit example-object-fit-fill"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>None</h3>
+            <img class="example-object-fit example-object-fit-none"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Scale Down</h3>
+            <img class="example-object-fit example-object-fit-scale-down"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Object Position</h1>
+        <div class="challenge-body">
+            <h3>70% 70% Contain</h3>
+            <img class="example-object-position"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Clip path</h1>
+        <div class="challenge-body">
+            <h3>Circle 50%</h3>
+            <img class="example-clip-path example-clip-path-circle"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Ellipse 20% 40%</h3>
+            <img class="example-clip-path example-clip-path-ellipse"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Inset 30px 20px 40px 50px</h3>
+            <img class="example-clip-path example-clip-path-inset"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <h3>Polygon 5% 10%, 90% 5%, 85% 80%, 15% 75%</h3>
+            <img class="example-clip-path example-clip-path-polygon"
+                src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="">
+            <div class="example-clip-hover">
+                <h3>Hover</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe cupiditate
+                maxime laudantium magnam fugiat nemo omnis culpa dolorem aut nam doloremque esse, voluptatem possimus
+                tempore perspiciatis nesciunt enim! Commodi.
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Floating box</h1>
+        <div class="challenge-body">
+            <div class="floating-box-wrapper">
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+                <div class="floating-box"></div>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Loading Text</h1>
+        <div class="challenge-body">
+            <div>
+                <span class="loading-text">L</span>
+                <span class="loading-text">O</span>
+                <span class="loading-text">A</span>
+                <span class="loading-text">D</span>
+                <span class="loading-text">I</span>
+                <span class="loading-text">N</span>
+                <span class="loading-text">G</span>
+            </div>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Button Border</h1>
+        <div class="challenge-body">
+            <button class="btn-border-btn">
+                Button
+                <div class="btn-border-line1"></div>
+                <div class="btn-border-line2"></div>
+                <div class="btn-border-line3"></div>
+                <div class="btn-border-line4"></div>
+            </button>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Floating Placeholder</h1>
+        <div class="challenge-body">
+            <form class="floating-placeholder-form">
+                <div class="floating-placeholder-form-input-container">
+                    <input type="text" required class="floating-placeholder-form-input" placeholder=" ">
+                    <label>First Name</label>
+                </div>
+                <div class="floating-placeholder-form-input-container">
+                    <input type="text" required class="floating-placeholder-form-input" placeholder=" ">
+                    <label>Last Name</label>
+                </div>
+                <div class="floating-placeholder-form-input-container">
+                    <input type="email" required class="floating-placeholder-form-input" placeholder=" ">
+                    <label>Email</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Toggle Checkbox</h1>
+        <div class="challenge-body">
+            <input type="checkbox" class="toggle-checkbox">
+            <br>
+            <br>
+            <div class="glow-checkbox-container">
+                <input type="checkbox" class="glow-checkbox">
+                <div class="glow-checkbox-icon-container">
+                    <i class="fab fa-react glow-checkbox-icon"></i>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="neomorphic-container">
+                <div class="glow-checkbox-container">
+                    <input type="checkbox" class="glow-checkbox neomorphic-checkbox">
+                    <div class="glow-checkbox-icon-container neomorphic-icon-container">
+                        <i class="fab fa-react glow-checkbox-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
 </body>
 
 </html>

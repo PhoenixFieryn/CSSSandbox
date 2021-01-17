@@ -23,6 +23,7 @@ body {
     /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05); */
     position: fixed;
     padding: 0 2.5vw;
+    z-index: 1;
 }
 
 .navbar-heading {
@@ -335,4 +336,772 @@ p[title*="astericks"] {
 
 .example-placeholder-selector::placeholder {
     color: white;
+}
+
+.example-menu-dropdown {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.example-menu-dropdown:hover > .example-menu-dropdown-subelements {
+    display: block;
+}
+
+.example-menu-dropdown:hover > .example-menu-dropdown-primary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.example-menu-dropdown-primary {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(31, 31, 31);
+    border-radius: .5rem;
+    transition: 0.2s all;
+}
+
+.example-menu-dropdown-subelements {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    left: 0;
+    display: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.example-menu-dropdown-subelements > div{
+    padding: 1rem;
+}
+
+.example-box-shadow {
+    position: relative;
+}
+
+.example-box-shadow-one {
+    padding: 3rem;
+    width: 20rem;
+    height: 10rem;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.example-box-shadow-two {
+    padding: 3rem;
+    width: 20rem;
+    height: 10rem;
+    box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.example-box-shadow-three {
+    padding: 3rem;
+    width: 20rem;
+    height: 10rem;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.example-linear-gradient {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: linear-gradient(rgb(69, 221, 248), rgb(69, 248, 114));
+    margin-bottom: 2rem;
+}
+
+.example-linear-gradient-to-right {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(69, 221, 248), rgb(69, 248, 114));
+    margin-bottom: 2rem;
+}
+
+.example-linear-gradient-deg {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: linear-gradient(-45deg, rgb(69, 221, 248), rgb(69, 248, 114));
+    margin-bottom: 2rem;
+}
+
+.example-linear-gradient-more-colors {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(69, 221, 248), rgb(69, 248, 114), rgb(255, 119, 119), rgb(255, 123, 255), orange);
+    margin-bottom: 2rem;
+}
+
+.example-linear-gradient-percent-colors {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(69, 221, 248) 10%, rgb(69, 248, 114) 20%, rgb(255, 119, 119) 30%, rgb(255, 123, 255) 40%, orange 50%);
+    margin-bottom: 2rem;
+}
+
+.example-linear-gradient-circle {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+    background-image: radial-gradient(rgb(69, 221, 248) 10%, rgb(69, 248, 114) 20%, rgb(255, 119, 119) 30%, rgb(255, 123, 255) 40%, orange 50%);
+    margin-bottom: 2rem;
+}
+
+.example-translate {
+    transform: translate(50rem, 5rem);
+}
+
+.example-scale {
+    transform-origin: left;
+    transform: scale(1.5);
+}
+
+.example-rotate {
+    transform: rotate(180deg);
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 221, 248);
+}
+
+.example-skew {
+    transform: skew(8deg, 16deg);
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 248, 114);
+}
+
+.example-matrix {
+    transform: matrix(0, 1, 1, 1, 1, 1);
+    margin-top: 20rem;
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 248, 114);
+}
+
+.example-3d-transform {
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 248, 114);
+    transform:  perspective(20rem)
+                translate3d(2rem, 2rem, -3rem);
+}
+
+.example-3d-rotate {
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 248, 114);
+    transform: rotate3d(80, 70, 60, 180deg);
+}
+
+.example-transition {
+    width: 40rem;
+    height: 20rem;
+    padding: 10rem;
+    background-color: rgb(69, 248, 114);
+    border-radius: 0;
+    transition: background-color 1s,
+                border-radius 2s;
+    transition-delay: 1s;
+}
+
+.example-transition:hover {
+    background-color: rgb(69, 221, 248);
+    border-radius: 1rem;
+}
+
+.example-transition-bezier {
+    width: 40rem;
+    height: 20rem;
+    padding: 10rem;
+    background-color: rgb(69, 248, 114);
+    border-radius: 0;
+    transition: background-color 1s cubic-bezier(0,1.72,1,-0.66),
+                border-radius 2s cubic-bezier(0,1.72,1,-0.66);
+}
+
+.example-transition-bezier:hover {
+    background-color: rgb(69, 221, 248);
+    border-radius: 1rem;
+}
+
+.example-animation, 
+.example-animation-iteration,
+.example-animation-alternate,
+.example-animation-both {
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(69, 221, 248);
+}
+
+.example-animation:hover {
+    animation: example-animation 2s forwards;
+}
+
+.example-animation-iteration:hover {
+    animation: example-animation 2s forwards;
+    animation-iteration-count: 2;
+}
+
+.example-animation-alternate:hover {
+    animation: example-animation 2s forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.example-tooltip {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.example-tooltip > span {
+    position: absolute;
+    bottom: 130%;
+    opacity: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 119, 119);
+    transition: opacity 0.2s;
+    z-index: 1;
+}
+
+.example-tooltip:hover > span {
+    opacity: 1;
+}
+
+.example-tooltip-arrow > span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -.5rem;
+    border-width: .5rem;
+    border-style: solid;
+    border-color: rgb(255, 119, 119) transparent transparent transparent;
+}
+
+.example-bg-image-co {
+    padding: 2rem;
+    border: .5rem dashed white;
+    background-image: url('https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.example-bg-image-co > div {
+    border: .5rem dashed white;
+    color: white;
+}
+
+.example-bg-image-origin-padding {
+    background-origin: padding-box;
+}
+
+.example-bg-image-origin-border {
+    background-origin: border-box;
+}
+
+.example-bg-image-origin-content {
+    background-origin: content-box;
+}
+
+.example-bg-image-clip-padding {
+    background-clip: padding-box;
+}
+
+.example-bg-image-clip-border {
+    background-clip: border-box;
+}
+
+.example-bg-image-clip-content {
+    background-clip: content-box;
+}
+
+.example-column {
+    columns: 4 40rem;
+    column-rule: 0.1rem black dashed;
+    column-gap: 3rem;
+}
+
+.example-resize {
+    resize: horizontal;
+    overflow: auto;
+}
+
+.example-outline-offset {
+    height: 4rem;
+    border: 0;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    outline-offset: .5rem;
+}
+
+.example-object-fit {
+    border: 1px solid black;
+    width: 50%;
+    height: 25rem;
+}
+
+.example-object-fit-cover {
+    object-fit: cover;
+}
+
+.example-object-fit-contain {
+    object-fit: contain;
+}
+
+.example-object-fit-fill {
+    object-fit: fill;
+}
+
+.example-object-fit-none {
+    object-fit: none;
+}
+
+.example-object-fit-scale-down {
+    object-fit: scale-down;
+}
+
+.example-object-position {
+    border: 1px solid black;
+    width: 30rem;
+    height: 25rem;
+    object-fit: contain;
+    object-position: 70% 20%;
+}
+
+.example-clip-path {
+    width: 50rem;
+    object-fit: cover;
+}
+
+.example-clip-path-circle {
+    clip-path: circle(50%);
+}
+
+.example-clip-path-ellipse {
+    clip-path: ellipse(20% 40%);
+}
+
+.example-clip-path-inset {
+    clip-path: inset(30px 20px 40px 50px);
+}
+
+.example-clip-path-polygon {
+    clip-path: polygon(5% 10%, 90% 5%, 85% 80%, 15% 75%);
+}
+
+.example-clip-hover {
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color:#007FFF;
+    color: white;
+    clip-path: circle(33% at 0% 0%);
+    transition: clip-path 0.2s;
+}
+
+.example-clip-hover:hover {
+    clip-path: circle(150% at 0% 0%);
+}
+
+.example-clip-hover > h3 {
+    margin-bottom: 4rem;
+}
+
+.floating-box-wrapper {
+    width: 100%;
+    height: 50rem;
+    background-image: linear-gradient(to top, #0a1424, #1e3d5e);
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(1) {
+    width: 9rem;
+    height: 9rem;
+    left: 6%;
+    animation-delay: 12s;
+    animation-duration: 17s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(2) {
+    width: 4rem;
+    height: 4rem;
+    left: 18%;
+    animation-delay: 7.3s;
+    animation-duration: 8s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(3) {
+    width: 11rem;
+    height: 11rem;
+    left: 29%;
+    animation-delay: 13.7s;
+    animation-duration: 20s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(4) {
+    width: 7rem;
+    height: 7rem;
+    left: 35%;
+    animation-delay: 3.7s;
+    animation-duration: 11s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(5) {
+    width: 13rem;
+    height: 13rem;
+    left: 47%;
+    animation-delay: 7s;
+    animation-duration: 18s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(6) {
+    width: 2rem;
+    height: 2rem;
+    left: 52%;
+    animation-delay: 1.7s;
+    animation-duration: 14s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(7) {
+    width: 8rem;
+    height: 8rem;
+    left: 63%;
+    animation-delay: 3.1s;
+    animation-duration: 23s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(8) {
+    width: 9rem;
+    height: 9rem;
+    left: 77%;
+    animation-delay: 5.4s;
+    animation-duration: 15s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(9) {
+    width: 11rem;
+    height: 11rem;
+    left: 85%;
+    animation-delay: 2.3s;
+    animation-duration: 9s;
+}
+
+.floating-box-wrapper > .floating-box:nth-child(10) {
+    width: 6rem;
+    height: 6rem;
+    left: 92%;
+    animation-delay: 3s;
+    animation-duration: 12s;
+}
+
+.floating-box {
+    border-radius: 10%;
+    background-image: linear-gradient(to top, #195c9e, #18ba8c);
+    opacity: 0.5;
+    display: inline-block;
+    position: absolute;
+    bottom: -15rem;
+    animation: floating-box-animation 25s linear infinite;
+}
+
+@keyframes floating-box-animation {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 100%;
+        border-radius: 50%;
+        transform: translateY(-15rem) rotate(700deg);
+        opacity: 1;
+    }
+}
+
+.loading-text {
+    font-weight: 600;
+    font-size: 3rem;
+    animation: loading-text-animation 3s ease-in-out infinite;
+    animation-direction: alternate;
+    display: inline-block;
+    color: #eb5534;
+}
+
+.loading-text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-text:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.loading-text:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.loading-text:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.loading-text:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.loading-text:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.loading-text:nth-child(7) {
+    animation-delay: 0.3s;
+}
+
+@keyframes loading-text-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20rem);
+        opacity: 0.8;
+        filter: hue-rotate(360deg);
+    }
+}
+
+.btn-border-btn {
+    padding: 2rem 3rem;
+    border: 0;
+    background: linear-gradient(to right,#ff3b3b, #ed7c64);
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+.btn-border-line1 {
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to left,#ffdb3b, #ed7c64);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: btn-border-line1-animation 1s linear infinite;
+}
+
+@keyframes btn-border-line1-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.btn-border-line2 {
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(to bottom,#ffdb3b, #ed7c64);
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: btn-border-line2-animation 1s linear infinite;
+}
+
+@keyframes btn-border-line2-animation {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.btn-border-line3 {
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,#ffdb3b, #ed7c64);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: btn-border-line3-animation 1s linear infinite;
+}
+
+@keyframes btn-border-line3-animation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.btn-border-line4 {
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(to right,#ffdb3b, #ed7c64);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: btn-border-line4-animation 1s linear infinite;
+}
+
+@keyframes btn-border-line4-animation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.floating-placeholder-form {
+    width: 50rem;
+    background-color: rgba(240, 240, 240);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.floating-placeholder-form-input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.floating-placeholder-form-input {
+    width: 100%;
+    background-color: rgba(240, 240, 240);
+    border: 0;
+    border-bottom: 0.2rem solid orange;
+    padding: 2rem 1rem 1rem 1rem;
+    outline: 0;
+}
+
+.floating-placeholder-form-input + label {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    pointer-events: none;
+    transition: 0.2s all;
+}
+
+.floating-placeholder-form-input:focus + label,
+.floating-placeholder-form-input:valid + label,
+.floating-placeholder-form-input[type="email"]:not(:placeholder-shown) + label {
+    font-size: 1rem;
+    top: 0rem;
+}
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    outline: 0;
+    background-color: white;
+    position: relative;
+    padding: 0;
+    transition: 0.2s all;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.toggle-checkbox:checked {
+    background-color: #008cff;
+}
+
+.toggle-checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    transform: scale(1.01);
+    transition: 0.2s all;
+    box-shadow: 0 0.1rem .4rem rgba(0, 0, 0, 0.2);
+}
+
+.toggle-checkbox:checked::before {
+    transform: scale(1.01) translateX(3rem);
+}
+
+.glow-checkbox-container {
+    position: relative;
+    display: inline-block;
+}
+
+.glow-checkbox {
+    position: absolute;
+    outline: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    cursor: pointer;
+}
+
+.glow-checkbox-icon {
+    font-size: 5rem;
+    transition: all 0.2s;
+}
+
+.glow-checkbox-icon-container {
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: all 0.2s;
+}
+
+.glow-checkbox:checked + .glow-checkbox-icon-container {
+    box-shadow: 0 0 .8rem rgba(31, 210, 255, 0.5);
+}
+
+.glow-checkbox:checked + .glow-checkbox-icon-container i {
+    color: #1fd2ff;
+}
+
+.neomorphic-container {
+    padding: 2rem;
+    background-color: rgba(240, 240, 240);
+    display: inline-block;
+}
+
+.neomorphic-icon-container {
+    background-color: rgba(240, 240, 240);
+    box-shadow: -0.2rem -0.2rem 0.5rem rgba(255, 255, 255, 1),
+                0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.neomorphic-checkbox:checked + .glow-checkbox-icon-container {
+    box-shadow: inset -0.2rem -0.2rem 0.5rem rgba(255, 255, 255, 1),
+                inset 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.neomorphic-checkbox:checked + .glow-checkbox-icon-container i {
+    color: #1fd2ff;
 }
