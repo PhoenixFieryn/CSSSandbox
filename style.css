@@ -1013,6 +1013,10 @@ p[title*="astericks"] {
     top: 0rem;
 }
 
+.floating-placeholder-form-input[type="email"]:not(:placeholder-shown):invalid {
+    border-bottom: .2rem solid red;
+}
+
 .toggle-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
